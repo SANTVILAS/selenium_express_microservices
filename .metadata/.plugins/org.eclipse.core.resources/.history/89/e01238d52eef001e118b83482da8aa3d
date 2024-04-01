@@ -1,0 +1,12 @@
+package com.seleniumexpress.employeeapp.service;
+
+import com.seleniumexpress.employeeapp.entity.Employee;
+
+public class EmployeeService {
+
+	public Employee getEmployeeById() {
+		
+		Employee employee=employeeRepo.findById(id).get();
+	}
+	
+}

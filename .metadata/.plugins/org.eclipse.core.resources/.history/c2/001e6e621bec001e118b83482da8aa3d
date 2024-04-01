@@ -1,0 +1,17 @@
+package com.seleniumexpress.employeeservice.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeController {
+
+	// reuirement return address data as well along with Employee data
+	
+	
+	@GetMapping("employee")
+	public String getEmployee() {
+		return "Name : Santvilas ,Email :santvilas34@gmail.com";
+	}
+	
+}

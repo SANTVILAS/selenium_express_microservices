@@ -1,0 +1,23 @@
+package com.seleniumexpress.employeeapp.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Employee")
+public class Employee {
+
+	//id name email bloodgroup
+	@Column(name="id")
+	private int id;
+	
+	private String name;
+	
+	private String email;
+	
+	private String bloodgroup;
+	
+	
+	
+}

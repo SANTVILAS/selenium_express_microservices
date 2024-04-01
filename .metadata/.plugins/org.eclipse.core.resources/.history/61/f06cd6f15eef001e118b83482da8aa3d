@@ -1,0 +1,10 @@
+package com.seleniumexpress.employeeapp.response;
+
+public class AddressResponse {
+
+	private int id;
+	
+	private String lane1;
+	
+	
+}

@@ -1,0 +1,16 @@
+package com.seleniumexpress.employeeapp.service;
+
+import org.springframework.stereotype.Service;
+
+import com.seleniumexpress.employeeapp.response.AddressResponse;
+
+@Service
+public class AddressService {
+	
+	
+
+	public AddressResponse addressResponse(int employeeId) {
+		
+	}
+	
+}

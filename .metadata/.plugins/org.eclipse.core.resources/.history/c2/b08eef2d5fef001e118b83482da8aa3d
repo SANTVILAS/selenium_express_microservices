@@ -1,0 +1,18 @@
+package com.seleniumexpress.employeeapp.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.seleniumexpress.employeeapp.response.AddressResponse;
+
+@RestController
+public class Address {
+
+	@GetMapping("/address/{employeeId}")
+	public AddressResponse getAddressById(@PathVariable("id") int id) {
+		AddressResponse addressResponse = null;
+		return addressResponse;
+	}
+	
+}

@@ -1,0 +1,20 @@
+package com.seleniumexpress.employeeapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.seleniumexpress.employeeapp.repo.AddressRepo;
+import com.seleniumexpress.employeeapp.response.AddressResponse;
+
+@Service
+public class AddressService {
+	
+	@Autowired
+	public AddressRepo addressRepo;
+	
+
+	public AddressResponse addressResponse(int employeeId) {
+		
+	}
+	
+}

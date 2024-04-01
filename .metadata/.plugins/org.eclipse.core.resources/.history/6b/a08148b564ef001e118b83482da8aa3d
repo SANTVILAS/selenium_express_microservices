@@ -1,0 +1,26 @@
+package com.seleniumexpress.employeeapp.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.seleniumexpress.employeeapp.controller.Address;
+import com.seleniumexpress.employeeapp.repo.AddressRepo;
+import com.seleniumexpress.employeeapp.response.AddressResponse;
+
+@Service
+public class AddressService {
+	
+	@Autowired
+	public AddressRepo addressRepo;
+	
+	@Autowired
+	private ModelMapper modelMapper;
+
+	public AddressResponse addressResponse(int employeeId) {
+		
+		Address address = addressRepo.findAddressByEmployeeId(employeeId);
+		modelMapper.map(address, AddressResponse);
+	}
+	
+}

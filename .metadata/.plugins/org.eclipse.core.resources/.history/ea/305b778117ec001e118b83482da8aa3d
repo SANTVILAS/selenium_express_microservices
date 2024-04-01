@@ -1,0 +1,12 @@
+package com.seleniumexpress.addressservice.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AddressController {
+
+	public String getAddress() {
+		
+	}
+	
+}
